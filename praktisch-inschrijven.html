@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Praktisch &amp; inschrijven — Aan de Draad</title>
-<meta name="description" content="Locatie, parkeren, aanbetaling, annuleren, materialenlijst en het inschrijfformulier van Aan de Draad in [STAD].">
+<meta name="description" content="Locatie, parkeren, aanbetaling, annuleren, materialenlijst en inschrijven per e-mail of WhatsApp bij Aan de Draad in [STAD].">
 <link rel="canonical" href="https://mjmeijerman.github.io/naailes/praktisch-inschrijven.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,9 +37,9 @@
     <div class="wrap">
       <p class="eyebrow">Praktisch</p>
       <h1>Inschrijven en praktische afspraken</h1>
-      <p class="lead">Vul het formulier in, dan krijg je binnen twee werkdagen bericht met een bevestiging en een betaallink. Je plek staat zeven dagen voor je gereserveerd.</p>
+      <p class="lead">Mail of app je gegevens, dan krijg je binnen twee werkdagen bericht met een bevestiging en een betaallink. Je plek staat zeven dagen voor je gereserveerd.</p>
       <div class="btn-row">
-        <a class="btn btn--primary" href="#inschrijven">Naar het formulier</a>
+        <a class="btn btn--primary" href="mailto:hallo@mjmeijerman.github.io?subject=Inschrijving%20naailes">Mail om in te schrijven</a>
         <a class="btn btn--ghost" href="https://wa.me/[TELEFOON]">Liever WhatsApp</a>
       </div>
     </div>
@@ -165,11 +165,11 @@
         </details>
         <details>
           <summary>Kan ik een les cadeau doen?</summary>
-          <div class="faq-body"><p>Ja. Schrijf in met de naam van de ontvanger en zet in het opmerkingenveld dat het een cadeau is. Je krijgt een bevestiging die je kunt doorsturen of printen.</p></div>
+          <div class="faq-body"><p>Ja. Schrijf in via e-mail of WhatsApp met de naam van de ontvanger en vermeld dat het om een cadeau gaat. Je krijgt een bevestiging die je kunt doorsturen of printen.</p></div>
         </details>
         <details>
           <summary>Geven jullie ook breiles?</summary>
-          <div class="faq-body"><p>Nog niet. Als er genoeg mensen zijn die het willen, komt het er. Zet het vinkje onderaan het formulier en je hoort het als eerste.</p></div>
+          <div class="faq-body"><p>Nog niet. Als er genoeg mensen zijn die het willen, komt het er. Laat het weten in je mail of WhatsApp-bericht en je hoort het als eerste.</p></div>
         </details>
       </div>
     </div>
@@ -179,83 +179,32 @@
     <div class="wrap">
       <div class="section-head">
         <h2>Inschrijven</h2>
-        <p>Vul in wat je wilt volgen. Je hoort binnen twee werkdagen van me, met een bevestiging en een betaallink.</p>
+        <p>Inschrijven gaat via e-mail of WhatsApp. Je hoort binnen twee werkdagen van me, met een bevestiging en een betaallink.</p>
       </div>
 
-      <!-- Zet hier je eigen formulier-endpoint neer (Formspree, Netlify Forms, Basin). -->
-      <form class="form" action="https://formspree.io/f/VERVANG-MIJ" method="post">
-        <div class="field">
-          <label for="naam">Naam</label>
-          <input id="naam" name="naam" type="text" autocomplete="name" required>
+      <div class="cards cards--2">
+        <div class="card">
+          <h3>Mailen</h3>
+          <p>Stuur een mailtje met je gegevens. Ik antwoord binnen twee werkdagen, ook als je vraag niet doorgaat.</p>
+          <p class="card-cta"><a class="btn btn--primary btn--wide" href="mailto:hallo@mjmeijerman.github.io?subject=Inschrijving%20naailes">Mail naar hallo@mjmeijerman.github.io</a></p>
         </div>
-
-        <div class="field">
-          <label for="email">E-mailadres</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-          <p class="hint">Hier komt de bevestiging en de betaallink.</p>
+        <div class="card">
+          <h3>WhatsApp</h3>
+          <p>Liever even appen? Stuur dezelfde gegevens door, dan regel ik het verder met je.</p>
+          <p class="card-cta"><a class="btn btn--ghost btn--wide" href="https://wa.me/[TELEFOON]">Stuur een WhatsApp-bericht</a></p>
         </div>
+      </div>
 
-        <div class="field">
-          <label for="telefoon">Telefoonnummer <span class="muted">(optioneel)</span></label>
-          <input id="telefoon" name="telefoon" type="tel" autocomplete="tel">
-        </div>
-
-        <div class="field">
-          <label for="product">Wat wil je volgen?</label>
-          <select id="product" name="product" required>
-            <option value="">Kies een cursus</option>
-            <option value="beginners">Beginnerscursus — €395, 10 weken</option>
-            <option value="gevorderd">Gevorderde cursus — €425, 10 weken</option>
-            <option value="vrij-los">Vrije naailes, losse les — €28</option>
-            <option value="vrij-strip">Vrije naailes, strippenkaart — €125</option>
-            <option value="cadeau">Cadeau</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="voorkeur">Voorkeursdag</label>
-          <select id="voorkeur" name="voorkeursdag">
-            <option value="geen">Maakt niet uit</option>
-            <option value="dinsdag">Dinsdagavond</option>
-            <option value="woensdag">Woensdagavond</option>
-            <option value="donderdag">Donderdagavond</option>
-            <option value="zaterdag">Zaterdagochtend</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="startdatum">Startdatum</label>
-          <select id="startdatum" name="startdatum">
-            <option value="eerste">[STARTDATUM 1] — dinsdag</option>
-            <option value="tweede">[STARTDATUM 2] — donderdag</option>
-            <option value="gevorderd">[STARTDATUM 3] — gevorderd, dinsdag</option>
-            <option value="nog-onbekend">Nog niet bekend, houd me op de hoogte</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="opmerking">Iets wat ik moet weten <span class="muted">(optioneel)</span></label>
-          <textarea id="opmerking" name="opmerking" rows="4" placeholder="Bijvoorbeeld: ik heb al eens genaaid, of: dit is een cadeau voor iemand anders."></textarea>
-        </div>
-
-        <div class="checkbox">
-          <input id="wachtlijst" name="wachtlijst" type="checkbox" value="ja">
-          <label for="wachtlijst">Zet me op de wachtlijst als deze datum vol is.</label>
-        </div>
-
-        <div class="checkbox">
-          <input id="breien" name="breien" type="checkbox" value="ja">
-          <label for="breien">Ik wil ook bericht als er breiles komt.</label>
-        </div>
-
-        <div class="checkbox">
-          <input id="privacy" name="privacy" type="checkbox" value="ja" required>
-          <label for="privacy">Ik vind het goed dat mijn gegevens bewaard worden om mijn inschrijving te regelen. Ze gaan niet naar iemand anders.</label>
-        </div>
-
-        <button class="btn btn--primary" type="submit">Verstuur inschrijving</button>
-        <p class="small muted">Geen nieuwsbrief, geen automatische incasso. Je hoort binnen twee werkdagen van me, ook als het niet lukt.</p>
-      </form>
+      <div class="stack measure mt-2">
+        <h3>Wat je meestuurt</h3>
+        <ul>
+          <li>Je naam</li>
+          <li>Je e-mailadres of je telefoonnummer, daar komen de bevestiging en de betaallink binnen. Eén van de twee is genoeg; je e-mailadres mag ook leeg blijven</li>
+          <li>Welke cursus je wilt volgen: beginnerscursus, gevorderde cursus, vrije naailes of een cadeau</li>
+          <li>Een voorkeursdag of startdatum, als je die al weet</li>
+        </ul>
+        <p class="small">Geen nieuwsbrief, geen automatische incasso. Je gegevens gaan niet naar iemand anders.</p>
+      </div>
     </div>
   </section>
 

@@ -11,7 +11,7 @@ beginnerscursus.html           Beginnerscursus
 gevorderde-cursus.html         Gevorderde cursus
 vrije-naailes.html             Vrije naailes
 over-mij.html                  Over mij
-praktisch-inschrijven.html     Praktisch, FAQ, inschrijfformulier
+praktisch-inschrijven.html     Praktisch, FAQ, inschrijven
 assets/css/style.css           Alle vormgeving
 assets/js/site.js              Alleen de mobiele menuknop
 assets/img/                    Foto's (nu placeholders)
@@ -33,7 +33,6 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 | `[SEIZOEN]` | bv. `najaar 2026` |
 | `[NAAM]`, `[JAAR]`, `[OPLEIDING / ACHTERGROND]`, `[BEROEP]` | Over mij |
 | `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[ADRES-URL-ENCODED]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
-| `VERVANG-MIJ` | je formulier-endpoint (zie hieronder) |
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[STAD\]" .`
 
@@ -42,14 +41,12 @@ Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[ST
 `https://mjmeijerman.github.io/naailes/` door het nieuwe domein (canonical-links, `sitemap.xml`,
 `robots.txt`, `mailto:`-links en de footer-regel).
 
-## Formulier aanzetten (10 minuten)
+## Inschrijven
 
-1. Maak een gratis account bij Formspree.
-2. Kopieer het endpoint, bijvoorbeeld `https://formspree.io/f/abcdwxyz`.
-3. Vervang in `praktisch-inschrijven.html` de waarde van `action="..."`.
-4. Test met je eigen mailadres. Je moet de inzending in je inbox krijgen.
-
-Zonder endpoint doet het formulier niets. Dat is de enige stap die echt moet.
+Er is geen formulier en geen formulier-endpoint. Bezoekers schrijven in via e-mail
+(`mailto:hallo@mjmeijerman.github.io`) of WhatsApp (`https://wa.me/[TELEFOON]`).
+Beide staan als blok op `praktisch-inschrijven.html#inschrijven` en als knop in de hero
+van die pagina.
 
 ## Foto's
 
@@ -92,7 +89,7 @@ naar de root van `mjmeijerman.github.io`.
 ## Wat de site bewust niet heeft
 
 Geen agenda-plugin, geen boekingssysteem, geen webshop, geen blog, geen login, geen nieuwsbriefpopup.
-Startdata staan op de cursuspagina's. Contact is een blok op de inschrijfpagina.
+Startdata staan op de cursuspagina's. Contact is een blok op de inschrijfpagina: e-mail of WhatsApp, geen formulier.
 
 ## Nog open (uit het besluitdocument)
 
