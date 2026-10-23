@@ -11,7 +11,7 @@ beginnerscursus.html           Beginnerscursus
 gevorderde-cursus.html         Gevorderde cursus
 vrije-naailes.html             Vrije naailes
 over-mij.html                  Over mij
-praktisch-inschrijven.html     Praktisch, FAQ, inschrijfformulier
+praktisch-inschrijven.html     Praktisch, FAQ, inschrijven
 assets/css/style.css           Alle vormgeving
 assets/js/site.js              Alleen de mobiele menuknop
 assets/img/                    Foto's (nu placeholders)
@@ -28,24 +28,22 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 | `[STRAAT + NUMMER]`, `[POSTCODE]` | adres van het lokaal |
 | `[DOMEIN]` | `aandedraad.nl` (na de naamcheck) |
 | `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
+| `hallo@mjmeijerman.github.io` | het echte mailadres van de eigenaar (staat nu als afgeleide waarde op de inschrijfpagina) |
 | `[KVK-NUMMER]` | KvK-nummer |
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
 | `[PLEKKEN]` | bv. `5 vrij` of `vol` |
 | `[SEIZOEN]` | bv. `najaar 2026` |
 | `[NAAM]`, `[JAAR]`, `[OPLEIDING / ACHTERGROND]`, `[BEROEP]` | Over mij |
 | `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[ADRES-URL-ENCODED]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
-| `VERVANG-MIJ` | je formulier-endpoint (zie hieronder) |
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[STAD\]" .`
 
-## Formulier aanzetten (10 minuten)
+## Inschrijven
 
-1. Maak een gratis account bij Formspree (of Netlify Forms als je daar host).
-2. Kopieer het endpoint, bijvoorbeeld `https://formspree.io/f/abcdwxyz`.
-3. Vervang in `praktisch-inschrijven.html` de waarde van `action="..."`.
-4. Test met je eigen mailadres. Je moet de inzending in je inbox krijgen.
-
-Zonder endpoint doet het formulier niets. Dat is de enige stap die echt moet.
+Er is geen formulier en geen formulier-endpoint. Bezoekers schrijven in via e-mail
+(`mailto:hallo@mjmeijerman.github.io`) of WhatsApp (`https://wa.me/[TELEFOON]`).
+Beide staan als blok op `praktisch-inschrijven.html#inschrijven` en als knop in de hero
+van die pagina.
 
 ## Foto's
 
@@ -65,12 +63,12 @@ Open `http://localhost:8000`. Direct `index.html` openen kan ook, dan werkt alle
 - **Netlify / Cloudflare Pages:** map slepen, klaar. Gratis, HTTPS inbegrepen.
 - **GitHub Pages:** Settings → Pages → branch `trunk`, map `/`. Gratis.
 
-Beide kunnen het formulier aan. Kies één, dan hoef je niets te onderhouden.
+Kies één, dan hoef je niets te onderhouden.
 
 ## Wat de site bewust niet heeft
 
 Geen agenda-plugin, geen boekingssysteem, geen webshop, geen blog, geen login, geen nieuwsbriefpopup.
-Startdata staan op de cursuspagina's. Contact is een blok op de inschrijfpagina.
+Startdata staan op de cursuspagina's. Contact is een blok op de inschrijfpagina: e-mail of WhatsApp, geen formulier.
 
 ## Nog open (uit het besluitdocument)
 

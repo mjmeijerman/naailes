@@ -210,6 +210,24 @@ a:hover { color: var(--terra); }
 }
 .btn--ghost:hover { background: var(--ink); color: var(--paper); }
 
+/* Kaarten in een donkere sectie hebben een lichte achtergrond: tekst terug naar inkt. */
+.section--ink .card,
+.section--ink .card h3 { color: var(--ink); }
+
+/* In een donkere sectie erven knoppen de linkkleur; zet hun eigen kleur terug. */
+.section--ink a.btn--primary,
+.section--ink a.btn--primary:hover { color: #fff; }
+.section--ink a.btn--ghost {
+  border-color: #f0b795;
+  color: #f0b795;
+}
+.section--ink a.btn--ghost:hover { background: #f0b795; color: var(--ink); }
+.section--ink .card a.btn--ghost {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.section--ink .card a.btn--ghost:hover { background: var(--ink); color: var(--paper); }
+
 .btn--wide { width: 100%; }
 @media (min-width: 34rem) { .btn--wide { width: auto; } }
 
@@ -439,43 +457,6 @@ th {
   color: var(--ink-soft);
   max-width: 44rem;
 }
-
-/* ---------- form ---------- */
-
-.form {
-  display: grid;
-  gap: 1.1rem;
-  max-width: 34rem;
-  margin: 0;
-}
-.field { display: grid; gap: 0.35rem; }
-.field label { font-weight: 600; font-size: 0.95rem; }
-.field .hint { font-size: 0.85rem; color: var(--ink-soft); }
-.field input,
-.field select,
-.field textarea {
-  font: inherit;
-  font-size: 1rem;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid #cfc5b7;
-  border-radius: var(--radius);
-  padding: 0.65rem 0.75rem;
-  width: 100%;
-}
-.field textarea { min-height: 6.5rem; resize: vertical; }
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  border-color: var(--terra);
-}
-.checkbox {
-  display: flex;
-  gap: 0.6rem;
-  align-items: flex-start;
-  font-size: 0.95rem;
-}
-.checkbox input { width: 1.15rem; height: 1.15rem; margin-top: 0.2rem; }
 
 /* ---------- footer ---------- */
 
