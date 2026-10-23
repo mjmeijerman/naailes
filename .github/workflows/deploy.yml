@@ -24,10 +24,16 @@ jobs:
       - name: Pages configureren
         uses: actions/configure-pages@v5
 
+      - name: Site-bestanden klaarzetten
+        run: |
+          mkdir -p _site
+          cp -R assets _site/
+          cp -- *.html robots.txt sitemap.xml .nojekyll _site/
+
       - name: Site als artifact uploaden
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     needs: build

@@ -80,6 +80,11 @@ geen build-stap, dus elke host die een map met statische bestanden serveert vold
 
 `.nojekyll` staat in de root, zodat bestanden en mappen met `_` niet door Jekyll worden weggefilterd.
 
+De workflow publiceert niet de hele repo, maar alleen de site: alle `*.html` uit de root, `assets/`,
+`robots.txt`, `sitemap.xml` en `.nojekyll` (stap *Site-bestanden klaarzetten*). `docs/`, `README.md`,
+`.github/` en `.gitignore` komen dus niet online. Komt er een nieuwe map met sitebestanden bij, voeg die dan
+aan die kopieerstap toe.
+
 Alle interne paden zijn relatief (`assets/css/style.css`, `beginnerscursus.html`). Dat is nodig omdat de site
 als Pages *project* site onder het subpad `/naailes/` staat. Gebruik dus nooit `/assets/...`, want dat wijst
 naar de root van `mjmeijerman.github.io`.
