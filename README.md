@@ -27,8 +27,8 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 | `[STAD]` | plaatsnaam |
 | `[STRAAT + NUMMER]`, `[POSTCODE]` | adres van het lokaal |
 | `[DOMEIN]` | `aandedraad.nl` (na de naamcheck) |
+| `[EMAIL]` | het echte mailadres, bv. `hallo@aandedraad.nl` (staat nu nog leeg, mag een placeholder blijven tot het adres bestaat) |
 | `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
-| `hallo@mjmeijerman.github.io` | het echte mailadres van de eigenaar (staat nu als afgeleide waarde op de inschrijfpagina) |
 | `[KVK-NUMMER]` | KvK-nummer |
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
 | `[PLEKKEN]` | bv. `5 vrij` of `vol` |
@@ -41,7 +41,7 @@ Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[ST
 ## Inschrijven
 
 Er is geen formulier en geen formulier-endpoint. Bezoekers schrijven in via e-mail
-(`mailto:hallo@mjmeijerman.github.io`) of WhatsApp (`https://wa.me/[TELEFOON]`).
+(`mailto:hallo@[EMAIL]`) of WhatsApp (`https://wa.me/[TELEFOON]`).
 Beide staan als blok op `praktisch-inschrijven.html#inschrijven` en als knop in de hero
 van die pagina.
 
