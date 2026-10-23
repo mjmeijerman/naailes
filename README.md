@@ -26,7 +26,6 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 |---|---|
 | `[STAD]` | plaatsnaam |
 | `[STRAAT + NUMMER]`, `[POSTCODE]` | adres van het lokaal |
-| `[DOMEIN]` | `aandedraad.nl` (na de naamcheck) |
 | `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
 | `[KVK-NUMMER]` | KvK-nummer |
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
@@ -38,9 +37,14 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[STAD\]" .`
 
+`[DOMEIN]` is al ingevuld: de site staat op `https://mjmeijerman.github.io/naailes/` en mail gaat naar
+`hallo@mjmeijerman.github.io`. Komt er later een eigen domein, vervang dan in alle bestanden
+`https://mjmeijerman.github.io/naailes/` door het nieuwe domein (canonical-links, `sitemap.xml`,
+`robots.txt`, `mailto:`-links en de footer-regel).
+
 ## Formulier aanzetten (10 minuten)
 
-1. Maak een gratis account bij Formspree (of Netlify Forms als je daar host).
+1. Maak een gratis account bij Formspree.
 2. Kopieer het endpoint, bijvoorbeeld `https://formspree.io/f/abcdwxyz`.
 3. Vervang in `praktisch-inschrijven.html` de waarde van `action="..."`.
 4. Test met je eigen mailadres. Je moet de inzending in je inbox krijgen.
@@ -62,10 +66,28 @@ Open `http://localhost:8000`. Direct `index.html` openen kan ook, dan werkt alle
 
 ## Live zetten
 
-- **Netlify / Cloudflare Pages:** map slepen, klaar. Gratis, HTTPS inbegrepen.
-- **GitHub Pages:** Settings → Pages → branch `trunk`, map `/`. Gratis.
+Publiceren gaat automatisch via GitHub Actions. `.github/workflows/deploy.yml` deployt elke push naar
+`trunk` naar GitHub Pages; je kunt de workflow ook handmatig starten via Actions → *Deploy naar GitHub Pages* →
+*Run workflow*.
 
-Beide kunnen het formulier aan. Kies één, dan hoef je niets te onderhouden.
+Eenmalige instelling in de repo: **Settings → Pages → Source: GitHub Actions**. Zonder die instelling
+faalt de deploy-stap.
+
+Let op: GitHub Pages op een **private** repo werkt alleen met GitHub Pro, Team of Enterprise. Zolang de repo
+private is op een gratis plan, slaat de workflow aan maar kan de deploy niet publiceren. Maak de repo publiek,
+neem een betaald plan, of host dezelfde statische map elders (Cloudflare Pages, Netlify). De site zelf heeft
+geen build-stap, dus elke host die een map met statische bestanden serveert voldoet.
+
+`.nojekyll` staat in de root, zodat bestanden en mappen met `_` niet door Jekyll worden weggefilterd.
+
+De workflow publiceert niet de hele repo, maar alleen de site: alle `*.html` uit de root, `assets/`,
+`robots.txt`, `sitemap.xml` en `.nojekyll` (stap *Site-bestanden klaarzetten*). `docs/`, `README.md`,
+`.github/` en `.gitignore` komen dus niet online. Komt er een nieuwe map met sitebestanden bij, voeg die dan
+aan die kopieerstap toe.
+
+Alle interne paden zijn relatief (`assets/css/style.css`, `beginnerscursus.html`). Dat is nodig omdat de site
+als Pages *project* site onder het subpad `/naailes/` staat. Gebruik dus nooit `/assets/...`, want dat wijst
+naar de root van `mjmeijerman.github.io`.
 
 ## Wat de site bewust niet heeft
 

@@ -1,6 +1,9 @@
 .DS_Store
 *.log
 
+# Pages-artifact (lokaal gegenereerd)
+_site/
+
 # secrets
 .env
 .env.*
@@ -10,3 +13,6 @@
 *.p12
 credentials*.json
 secrets*.json
+
+# pi-harness
+.agent-office/
