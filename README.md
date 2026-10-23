@@ -26,6 +26,7 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 |---|---|
 | `[STAD]` | plaatsnaam |
 | `[STRAAT + NUMMER]`, `[POSTCODE]` | adres van het lokaal |
+| `[EMAIL]` | het echte mailadres, bv. `hallo@aandedraad.nl` (staat bewust nog leeg) |
 | `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
 | `[KVK-NUMMER]` | KvK-nummer |
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
@@ -36,17 +37,18 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[STAD\]" .`
 
-`[DOMEIN]` is al ingevuld: de site staat op `https://mjmeijerman.github.io/naailes/` en mail gaat naar
-`hallo@mjmeijerman.github.io`. Komt er later een eigen domein, vervang dan in alle bestanden
-`https://mjmeijerman.github.io/naailes/` door het nieuwe domein (canonical-links, `sitemap.xml`,
-`robots.txt`, `mailto:`-links en de footer-regel).
+`[DOMEIN]` is al ingevuld: de site staat op `https://mjmeijerman.github.io/naailes/`. Komt er later een
+eigen domein, vervang dan in alle bestanden `https://mjmeijerman.github.io/naailes/` door het nieuwe
+domein (canonical-links, `sitemap.xml`, `robots.txt`, de `mailto:`-links en de footer-regel).
 
 ## Inschrijven
 
 Er is geen formulier en geen formulier-endpoint. Bezoekers schrijven in via e-mail
-(`mailto:hallo@mjmeijerman.github.io`) of WhatsApp (`https://wa.me/[TELEFOON]`).
-Beide staan als blok op `praktisch-inschrijven.html#inschrijven` en als knop in de hero
-van die pagina.
+(`mailto:[EMAIL]`) of WhatsApp (`https://wa.me/[TELEFOON]`). Beide staan als blok op
+`praktisch-inschrijven.html#inschrijven` en als knop in de hero van die pagina.
+
+`[EMAIL]` staat bewust nog leeg. Zolang het token niet is ingevuld, wijst de mailknop naar een leeg
+adres: vul het in voor de site de deur uit gaat.
 
 ## Foto's
 
