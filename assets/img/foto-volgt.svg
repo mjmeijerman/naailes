@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Foto volgt">
+  <rect width="800" height="600" fill="#f2ece2"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#d8ccbb" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="400" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#8f4222">foto volgt</text>
+  <text x="400" y="336" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#7a6f65">eigen werk, daglicht, geen stockfoto</text>
+</svg>
