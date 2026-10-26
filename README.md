@@ -32,7 +32,7 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
 | `[PLEKKEN]` | bv. `5 vrij` of `vol` |
 | `[SEIZOEN]` | bv. `najaar 2026` |
-| `[NAAM]`, `[JAAR]`, `[OPLEIDING / ACHTERGROND]`, `[BEROEP]` | Over mij |
+| `[NAAM]` | Over mij (naam in de titel en de foto-alt) |
 | `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[ADRES-URL-ENCODED]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[STAD\]" .`
