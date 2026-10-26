@@ -1,14 +1,14 @@
-/* Aan de Draad — basisstijl
-   1 accentkleur (terracotta) + off-white + bijna-zwart. Niets anders. */
+/* Stikgezellig — basisstijl
+   1 accentkleur (poederroze) + off-white + bijna-zwart. Niets anders. */
 
 :root {
-  --terra: #b4552d;
-  --terra-dark: #8f4222;
+  --terra: #b84d6e;
+  --terra-dark: #8f3552;
   --ink: #1e1b19;
   --ink-soft: #4a423c;
-  --paper: #faf7f2;
-  --paper-warm: #f2ece2;
-  --rule: #e0d7ca;
+  --paper: #fdf8f7;
+  --paper-warm: #f8ecef;
+  --rule: #e8d4da;
   --max: 66rem;
   --radius: 4px;
 }
@@ -85,7 +85,7 @@ a:hover { color: var(--terra); }
 }
 .section--ink h2,
 .section--ink h3 { color: var(--paper); }
-.section--ink a { color: #f0b795; }
+.section--ink a { color: #f4b8c8; }
 
 .section-head { max-width: 42rem; margin-bottom: 2rem; }
 
@@ -218,10 +218,10 @@ a:hover { color: var(--terra); }
 .section--ink a.btn--primary,
 .section--ink a.btn--primary:hover { color: #fff; }
 .section--ink a.btn--ghost {
-  border-color: #f0b795;
-  color: #f0b795;
+  border-color: #f4b8c8;
+  color: #f4b8c8;
 }
-.section--ink a.btn--ghost:hover { background: #f0b795; color: var(--ink); }
+.section--ink a.btn--ghost:hover { background: #f4b8c8; color: var(--ink); }
 .section--ink .card a.btn--ghost {
   border-color: var(--ink);
   color: var(--ink);
@@ -461,12 +461,12 @@ th {
 /* ---------- footer ---------- */
 
 .site-footer {
-  background: var(--ink);
-  color: #cfc5b7;
+  background: #4a2b3a;
+  color: #f6e7ec;
   padding: 3rem 0 2rem;
   font-size: 0.95rem;
 }
-.site-footer a { color: #f0b795; }
+.site-footer a { color: #f4b8c8; }
 .footer-grid {
   display: grid;
   gap: 2rem;
@@ -483,11 +483,11 @@ th {
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li { margin-bottom: 0.45rem; }
 .footer-note {
-  border-top: 1px solid #3a332e;
+  border-top: 1px solid #6e4658;
   margin-top: 2.5rem;
   padding-top: 1.25rem;
   font-size: 0.85rem;
-  color: #9c9187;
+  color: #d9b9c5;
 }
 
 /* ---------- utilities ---------- */

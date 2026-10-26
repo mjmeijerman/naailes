@@ -1,4 +1,4 @@
-# Aan de Draad — website
+# Stikgezellig — website
 
 Statische site, 6 pagina's, geen build-stap en geen framework. Open `index.html` en je ziet de site.
 Het besluit achter de inhoud staat in `docs/decisions/naailes-website-idee.md`.
@@ -24,9 +24,8 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 | Token | Wat er moet staan |
 |---|---|
-| `[STAD]` | plaatsnaam |
 | `[STRAAT + NUMMER]`, `[POSTCODE]` | adres van het lokaal |
-| `[EMAIL]` | het echte mailadres, bv. `hallo@aandedraad.nl` (staat bewust nog leeg) |
+| `[EMAIL]` | het echte mailadres, bv. `hallo@stikgezellig.nl` (staat bewust nog leeg) |
 | `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
 | `[KVK-NUMMER]` | KvK-nummer |
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
@@ -35,11 +34,11 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 | `[NAAM]` | Over mij (naam in de titel en de foto-alt) |
 | `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[ADRES-URL-ENCODED]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
 
-Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["` of gewoon `grep -rn "\[STAD\]" .`
+Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["`
 
 `[DOMEIN]` is al ingevuld: de site staat op `https://mjmeijerman.github.io/naailes/`. Komt er later een
 eigen domein, vervang dan in alle bestanden `https://mjmeijerman.github.io/naailes/` door het nieuwe
-domein (canonical-links, `sitemap.xml`, `robots.txt`, de `mailto:`-links en de footer-regel).
+domein (canonical-links, `sitemap.xml`, `robots.txt` en de `mailto:`-links).
 
 ## Inschrijven
 
