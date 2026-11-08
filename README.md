@@ -13,6 +13,7 @@ vrije-naailes.html             Vrije naailes
 over-mij.html                  Over mij
 praktisch-inschrijven.html     Praktisch, FAQ, inschrijven
 vakantierooster.html          Vakantierooster 2027 (gelinkt in de footer)
+algemene-voorwaarden.html     Algemene voorwaarden (gelinkt in de footer)
 assets/css/style.css           Alle vormgeving
 assets/js/site.js              Alleen de mobiele menuknop
 assets/img/                    Foto's (nu placeholders)
