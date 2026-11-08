@@ -1,6 +1,6 @@
 # Stikgezellig — website
 
-Statische site, 6 pagina's, geen build-stap en geen framework. Open `index.html` en je ziet de site.
+Statische site, 7 pagina's, geen build-stap en geen framework. Open `index.html` en je ziet de site.
 Het besluit achter de inhoud staat in `docs/decisions/naailes-website-idee.md`.
 
 ## Bestanden
@@ -12,6 +12,7 @@ gevorderde-cursus.html         Gevorderde cursus
 vrije-naailes.html             Vrije naailes
 over-mij.html                  Over mij
 praktisch-inschrijven.html     Praktisch, FAQ, inschrijven
+vakantierooster.html          Vakantierooster 2027 (gelinkt in de footer)
 assets/css/style.css           Alle vormgeving
 assets/js/site.js              Alleen de mobiele menuknop
 assets/img/                    Foto's (nu placeholders)
