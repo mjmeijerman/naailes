@@ -25,7 +25,6 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 | Token | Wat er moet staan |
 |---|---|
-| `[STRAAT + NUMMER]`, `[POSTCODE]` | adres van het lokaal |
 | `[EMAIL]` | het echte mailadres, bv. `hallo@stikgezellig.nl` (staat bewust nog leeg) |
 | `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
 | `[KVK-NUMMER]` | KvK-nummer |
@@ -33,7 +32,7 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 | `[PLEKKEN]` | bv. `5 vrij` of `vol` |
 | `[SEIZOEN]` | bv. `najaar 2026` |
 | `[NAAM]` | Over mij (naam in de titel en de foto-alt) |
-| `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[ADRES-URL-ENCODED]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
+| `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["`
 
