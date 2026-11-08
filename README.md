@@ -25,8 +25,6 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 | Token | Wat er moet staan |
 |---|---|
-| `[EMAIL]` | het echte mailadres, bv. `hallo@stikgezellig.nl` (staat bewust nog leeg) |
-| `[TELEFOON]` | nummer in internationaal formaat zonder `+` of `0`, bv. `31612345678` |
 | `[KVK-NUMMER]` | KvK-nummer |
 | `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
 | `[PLEKKEN]` | bv. `5 vrij` of `vol` |
@@ -43,11 +41,11 @@ domein (canonical-links, `sitemap.xml`, `robots.txt` en de `mailto:`-links).
 ## Inschrijven
 
 Er is geen formulier en geen formulier-endpoint. Bezoekers schrijven in via e-mail
-(`mailto:[EMAIL]`) of WhatsApp (`https://wa.me/[TELEFOON]`). Beide staan als blok op
+(`mailto:naailes@stikgezellig.nl`) of WhatsApp (`https://wa.me/31634369271`). Beide staan als blok op
 `praktisch-inschrijven.html#inschrijven` en als knop in de hero van die pagina.
 
-`[EMAIL]` staat bewust nog leeg. Zolang het token niet is ingevuld, wijst de mailknop naar een leeg
-adres: vul het in voor de site de deur uit gaat.
+Het nummer 06 34369271 is alleen via WhatsApp bereikbaar, niet telefonisch. Dat staat ook zo op de
+site vermeld.
 
 ## Foto's
 
