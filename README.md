@@ -11,7 +11,6 @@ beginnerscursus.html           Beginnerscursus
 gevorderde-cursus.html         Gevorderde cursus
 vrije-naailes.html             Vrije naailes
 over-mij.html                  Over mij
-praktisch-inschrijven.html     Praktisch, FAQ, inschrijven
 vakantierooster.html          Vakantierooster 2027 (gelinkt in de footer)
 algemene-voorwaarden.html     Algemene voorwaarden (gelinkt in de footer)
 assets/css/style.css           Alle vormgeving
@@ -26,12 +25,8 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 | Token | Wat er moet staan |
 |---|---|
-| `[KVK-NUMMER]` | KvK-nummer |
-| `[STARTDATUM 1]`, `[STARTDATUM 2]`, `[STARTDATUM 3]` | echte startdata |
-| `[PLEKKEN]` | bv. `5 vrij` of `vol` |
-| `[SEIZOEN]` | bv. `najaar 2026` |
+| `[KVK-NUMMER]` | KvK-nummer (staat al op de homepage: 98809369, nog niet op de andere pagina's) |
 | `[NAAM]` | Over mij (naam in de titel en de foto-alt) |
-| `[BEL-TEXT]`, `[VERDIEPING / ACHTER]`, `[WAAR]`, `[AFSTAND]`, `[SCHUUR / TUIN]`, `[LIJN]`, `[HALTE]` | praktische tekst op de inschrijfpagina |
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["`
 
@@ -43,7 +38,7 @@ domein (canonical-links, `sitemap.xml`, `robots.txt` en de `mailto:`-links).
 
 Er is geen formulier en geen formulier-endpoint. Bezoekers schrijven in via e-mail
 (`mailto:naailes@stikgezellig.nl`) of WhatsApp (`https://wa.me/31634369271`). Beide staan als blok op
-`praktisch-inschrijven.html#inschrijven` en als knop in de hero van die pagina.
+de homepage, in het blok over inschrijven, en als knop op de cursuspagina's.
 
 Het nummer 06 34369271 is alleen via WhatsApp bereikbaar, niet telefonisch. Dat staat ook zo op de
 site vermeld.
