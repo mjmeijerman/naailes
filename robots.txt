@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mjmeijerman.github.io/naailes/sitemap.xml
+Sitemap: https://stikgezellig.nl/sitemap.xml

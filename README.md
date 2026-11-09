@@ -30,8 +30,8 @@ Vervang deze tokens. Zoek en vervang ze in alle `.html`-bestanden tegelijk.
 
 Snel zoeken: `grep -rn "\[" *.html | grep -v "^\s*\["`
 
-`[DOMEIN]` is al ingevuld: de site staat op `https://mjmeijerman.github.io/naailes/`. Komt er later een
-eigen domein, vervang dan in alle bestanden `https://mjmeijerman.github.io/naailes/` door het nieuwe
+`[DOMEIN]` is al ingevuld: de site staat op `https://stikgezellig.nl/`. Komt er later een
+eigen domein, vervang dan in alle bestanden `https://stikgezellig.nl/` door het nieuwe
 domein (canonical-links, `sitemap.xml`, `robots.txt` en de `mailto:`-links).
 
 ## Inschrijven
