@@ -497,3 +497,12 @@ th {
 .small { font-size: 0.9rem; }
 .measure { max-width: 40rem; }
 .mt-2 { margin-top: 2rem; }
+
+/* Kaart in een kaartblok (OpenStreetMap-embed) */
+.map iframe {
+  width: 100%;
+  height: 22rem;
+  border: 0;
+  display: block;
+  border-radius: 4px;
+}
