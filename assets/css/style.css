@@ -506,3 +506,11 @@ th {
   display: block;
   border-radius: 4px;
 }
+
+/* Footer altijd onderaan, ook bij korte pagina's */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1 0 auto; }
